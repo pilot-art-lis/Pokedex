@@ -1,0 +1,270 @@
+[
+  {
+    "number": 1,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "ice",
+      "psychic"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "Bulbasaur",
+    "colorText": "#82C4A1",
+    "color": 8570017
+  },
+  {
+    "number": 2,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "ice",
+      "psychic"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "Ivysaur",
+    "colorText": "#88BCC1",
+    "color": 8961217
+  },
+  {
+    "number": 3,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "ice",
+      "psychic"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "Venusaur",
+    "colorText": "#30787E",
+    "color": 3176574
+  },
+  {
+    "number": 4,
+    "weaknesses": [
+      "ground",
+      "rock",
+      "water"
+    ],
+    "types": [
+      "fire"
+    ],
+    "name": "Charmander",
+    "colorText": "#E9AA78",
+    "color": 15313528
+  },
+  {
+    "number": 5,
+    "weaknesses": [
+      "ground",
+      "rock",
+      "water"
+    ],
+    "types": [
+      "fire"
+    ],
+    "name": "Charmeleon",
+    "colorText": "#C75140",
+    "color": 13062464
+  },
+  {
+    "number": 6,
+    "weaknesses": [
+      "rock",
+      "electric",
+      "water"
+    ],
+    "types": [
+      "flying",
+      "fire"
+    ],
+    "name": "Charizard",
+    "colorText": "#EFA257",
+    "color": 15704663
+  },
+  {
+    "number": 7,
+    "weaknesses": [
+      "electric",
+      "grass"
+    ],
+    "types": [
+      "water"
+    ],
+    "name": "Squirtle",
+    "colorText": "#5596AF",
+    "color": 5609135
+  },
+  {
+    "number": 8,
+    "weaknesses": [
+      "electric",
+      "grass"
+    ],
+    "types": [
+      "water"
+    ],
+    "name": "Wartortle",
+    "colorText": "#A8B9DF",
+    "color": 11057631
+  },
+  {
+    "number": 9,
+    "weaknesses": [
+      "electric",
+      "grass"
+    ],
+    "types": [
+      "water"
+    ],
+    "name": "Blastoise",
+    "colorText": "#5778B2",
+    "color": 5732530
+  },
+  {
+    "number": 10,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "rock"
+    ],
+    "types": [
+      "bug"
+    ],
+    "name": "Caterpie",
+    "colorText": "#65984B",
+    "color": 6658123
+  },
+  {
+    "number": 11,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "rock"
+    ],
+    "types": [
+      "bug"
+    ],
+    "name": "Metapod",
+    "colorText": "#76A839",
+    "color": 7776313
+  },
+  {
+    "number": 12,
+    "weaknesses": [
+      "rock",
+      "electric",
+      "fire",
+      "flying",
+      "ice"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ],
+    "name": "Butterfree",
+    "colorText": "#414162",
+    "color": -12500638
+  },
+  {
+    "number": 13,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "psychic",
+      "rock"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "Weedle",
+    "colorText": "#BD9452",
+    "color": -4352942
+  },
+  {
+    "number": 14,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "psychic",
+      "rock"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "Kakuna",
+    "colorText": "#9C9452",
+    "color": -6515630
+  },
+  {
+    "number": 15,
+    "weaknesses": [
+      "fire",
+      "flying",
+      "psychic",
+      "rock"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "Beedrill",
+    "colorText": "#7B7B8B",
+    "color": -8684661
+  },
+  {
+    "number": 16,
+    "weaknesses": [
+      "electric",
+      "ice",
+      "rock"
+    ],
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "Pidgey",
+    "colorText": "#AC8394",
+    "color": -5471340
+  },
+  {
+    "number": 17,
+    "weaknesses": [
+      "electric",
+      "ice",
+      "rock"
+    ],
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "Pidgeotto",
+    "colorText": "#9C525A",
+    "color": -6532518
+  },
+  {
+    "number": 18,
+    "weaknesses": [
+      "electric",
+      "ice",
+      "rock"
+    ],
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "Pidgeot",
+    "colorText": "#AC945A",
+    "color": -5467046
+  }
+]
