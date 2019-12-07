@@ -4,8 +4,8 @@
 
 ##### Autorzy:
 
-1.
-2.
+1. Artem Lysevych
+2. Jan Góralski
 
 ### Opis zadania
 
