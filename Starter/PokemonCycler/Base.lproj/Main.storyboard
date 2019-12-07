@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemon View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PokemonViewController" id="BYZ-38-t0r" customClass="PokemonViewController" customModule="PokemonCycler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bulbasaur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYQ-GY-kHf">
+                                <rect key="frame" x="128" y="434" width="158" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWQ-60-p6l">
+                                <rect key="frame" x="49" y="489.5" width="316" height="10"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="p5T-1G-ha8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w8-iA-f08">
+                                <rect key="frame" x="118" y="394" width="178" height="20"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="diR-En-9Cw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PWQ-60-p6l" firstAttribute="width" secondItem="hYQ-GY-kHf" secondAttribute="width" multiplier="2" id="5r0-nX-ajo"/>
+                            <constraint firstItem="6w8-iA-f08" firstAttribute="centerX" secondItem="hYQ-GY-kHf" secondAttribute="centerX" id="7Zj-2v-lVZ"/>
+                            <constraint firstItem="PWQ-60-p6l" firstAttribute="centerX" secondItem="hYQ-GY-kHf" secondAttribute="centerX" id="9dJ-pt-Hhc"/>
+                            <constraint firstItem="hYQ-GY-kHf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A84-WK-UzV"/>
+                            <constraint firstItem="hYQ-GY-kHf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WOt-Cx-sA2"/>
+                            <constraint firstItem="PWQ-60-p6l" firstAttribute="top" secondItem="hYQ-GY-kHf" secondAttribute="baseline" constant="25" id="ZlL-of-Syu"/>
+                            <constraint firstItem="6w8-iA-f08" firstAttribute="width" secondItem="hYQ-GY-kHf" secondAttribute="width" constant="20" id="g1K-5k-v6X"/>
+                            <constraint firstItem="hYQ-GY-kHf" firstAttribute="top" secondItem="6w8-iA-f08" secondAttribute="bottom" constant="20" id="mfx-7U-Ot1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLineView" destination="PWQ-60-p6l" id="67O-qt-f64"/>
+                        <outlet property="pokemonNameLabel" destination="hYQ-GY-kHf" id="J17-eX-z4g"/>
+                        <outlet property="topLineView" destination="6w8-iA-f08" id="wEO-7U-rHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
