@@ -40,6 +40,7 @@ class PokemonViewController: UIViewController {
             self?.bottomSeparator.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
             self?.pokemonName.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
             self?.pokemonNum.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
+            self?.indicator.stopAnimating()
         })
         
             imageFetcher.fetchPokemonImage(i, completionHandler: { [weak self] imageData in
@@ -66,6 +67,7 @@ class PokemonViewController: UIViewController {
             self?.bottomSeparator.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
             self?.pokemonName.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
             self?.pokemonNum.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
+            self?.indicator.stopAnimating()
         })
         
         imageFetcher.fetchPokemonImage(i, completionHandler: { [weak self] imageData in
@@ -95,6 +97,7 @@ class PokemonViewController: UIViewController {
         let swipeUP = UISwipeGestureRecognizer(target: self, action: #selector(fingerSwipe))
         swipeUP.direction = UISwipeGestureRecognizer.Direction.up
         self.background.addGestureRecognizer(swipeUP)
+        fingerSwipe()
     }
     
     @objc func handleTap() {
