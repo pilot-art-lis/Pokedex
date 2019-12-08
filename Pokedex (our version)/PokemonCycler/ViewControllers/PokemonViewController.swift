@@ -32,7 +32,6 @@ class PokemonViewController: UIViewController {
         
         pokemonFetcher.fetchPokemon(i, completion: { [weak self] pokemon in
             self?.indicator.startAnimating()
-            //self?.pokemonName.isHidden = false
             self?.pokemonName.text = pokemon?.name ?? "Failed\n" + "Try again"
             self?.pokemonNum.text = ("\(pokemon?.number ?? 0)")
             self?.background.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230)
@@ -41,41 +40,34 @@ class PokemonViewController: UIViewController {
             self?.pokemonName.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
             self?.pokemonNum.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
             self?.indicator.stopAnimating()
-        })
-        
-            imageFetcher.fetchPokemonImage(i, completionHandler: { [weak self] imageData in
-            if let data = imageData {
-                DispatchQueue.main.async {
-                    self?.indicator.stopAnimating()
-                    self?.pokemonImage.image = UIImage(data: data)
-                }
-            } else {
-                print("Error loading image")
-            }
         })
     }
     
     @IBAction func catchPokemon(_ i: Int) {
         
         pokemonFetcher.catchPokemon(i, completion: { [weak self] pokemon in
-            self?.indicator.startAnimating()
-            //self?.pokemonName.isHidden = false
-            self?.pokemonName.text = pokemon?.name ?? "Failed\n" + "Try again"
-            self?.pokemonNum.text = ("\(pokemon?.number ?? 0)")
-            self?.background.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230)
-            self?.topSeparator.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
-            self?.bottomSeparator.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
-            self?.pokemonName.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
-            self?.pokemonNum.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
-            self?.indicator.stopAnimating()
+            DispatchQueue.main.async {
+                self?.indicator.startAnimating()
+                self?.pokemonName.text = pokemon?.name ?? "Failed\n" + "Try again"
+                self?.pokemonNum.text = ("\(pokemon?.number ?? 0)")
+                self?.background.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230)
+                self?.topSeparator.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
+                self?.bottomSeparator.backgroundColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
+                self?.pokemonName.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
+                self?.pokemonNum.textColor = UIColor(hex: pokemon?.color ?? 7237230).darkenColor()
+                self?.indicator.stopAnimating()
+            }
         })
-        
-        imageFetcher.fetchPokemonImage(i, completionHandler: { [weak self] imageData in
+    }
+    
+    @IBAction func fetchImage(_ i: Int) {
+        indicator.startAnimating()
+        self.imageFetcher.fetchPokemonImage(i, completionHandler: { [weak self] imageData in
             if let data = imageData {
-                DispatchQueue.main.async {
+                //DispatchQueue.main.async {
                     self?.indicator.stopAnimating()
                     self?.pokemonImage.image = UIImage(data: data)
-                }
+                //}
             } else {
                 print("Error loading image")
             }
@@ -103,6 +95,7 @@ class PokemonViewController: UIViewController {
     @objc func handleTap() {
         pokemonID += 1
         nextPokemon(pokemonID)
+        fetchImage(pokemonID)
     }
     
     @objc func doubleTapped() {
@@ -112,9 +105,13 @@ class PokemonViewController: UIViewController {
             pokemonID -= 1
         }
         nextPokemon(pokemonID)
+        fetchImage(pokemonID)
     }
     
     @objc func fingerSwipe() {
-        catchPokemon(pokemonID)
+        DispatchQueue.main.async() {
+            self.catchPokemon(self.pokemonID)
+        }
+        fetchImage(pokemonID)
     }
 }
