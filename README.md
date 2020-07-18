@@ -1,4 +1,4 @@
-# Pokémdex 1
+# Pokédex 1
 
 ### Źródło API
 
