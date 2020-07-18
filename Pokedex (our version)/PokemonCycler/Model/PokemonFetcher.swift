@@ -2,7 +2,7 @@
 //  PokemonFetcher.swift
 //  PokemonCycler
 //
-//  Created by Jan on 07/12/2019.
+//  Created by Best Mac on 11/30/19.
 //  Copyright © 2019 iOS4Beginners. All rights reserved.
 //
 
